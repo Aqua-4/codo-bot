@@ -12,6 +12,7 @@ G_DIR  = ['cd',DEST]
 G_COMMIT = ['git','commit','-am','"WIP:get me codogram"']
 G_STAT = ['git','status']
 G_STASH = ['git','stash']
+G_PUSH = ['git','push']
 
 
 def bot_init():
@@ -29,8 +30,10 @@ def git_ops():
     x = subprocess.check_output(G_STAT)
     print(x)
     
-def git_commit():
+def git_comm_push():
     subprocess.check_output(G_COMMIT)
+    subprocess.check_output(G_PUSH)
     
 #bot_init()
 #git_ops()
+git_comm_push()
