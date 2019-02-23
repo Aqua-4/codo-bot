@@ -9,7 +9,7 @@ DEST = os.path.abspath(os.path.join(PARDIR , "codo-temp"))
 
 
 G_DIR  = ['cd',DEST]
-G_COMMIT = ['git','commit','-am','"WIP:get me codogram"']
+G_COMMIT = ['git','commit','-am',"WIP:get me codogram"]
 G_STAT = ['git','status']
 G_STASH = ['git','stash']
 G_PUSH = ['git','push']
